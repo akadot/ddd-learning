@@ -2,6 +2,11 @@
 
 public class Booking : Base
 {
+    public Booking()
+    {
+        this.Status = Status.Created;
+    }
+
     public DateTime PlacedAt { get; set; }
     public DateTime Start { get; set; }
     public DateTime End { get; set; }

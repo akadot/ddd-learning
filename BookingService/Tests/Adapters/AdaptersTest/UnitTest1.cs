@@ -1,4 +1,4 @@
-namespace Domain;
+namespace AdaptersTest;
 
 public class Tests
 {

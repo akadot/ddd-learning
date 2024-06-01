@@ -1,4 +1,4 @@
-namespace Adapters;
+namespace ApplicationTest;
 
 public class Tests
 {

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "sa3Hh1iRePUnfV0NuF13KoLxZtQAiCdh7xH4pc61itWcW2HhMYWfo8p+TZ7otAus4iYnjU7cT9+4qwScE15LQw==",
+  "success": true,
+  "projectFilePath": "/mnt/2bc3e166-890f-4f82-8624-56546d65a0c4/projects/dev/github/booking-hotel/BookingService/Consumers/API/API.csproj",
+  "expectedPackageFiles": [
+    "/home/akadot/.nuget/packages/microsoft.aspnetcore.openapi/8.0.5/microsoft.aspnetcore.openapi.8.0.5.nupkg.sha512",
+    "/home/akadot/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/home/akadot/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/home/akadot/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/home/akadot/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "/home/akadot/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "/home/akadot/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

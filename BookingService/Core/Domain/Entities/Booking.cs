@@ -12,6 +12,9 @@ public class Booking : Base
     public DateTime End { get; set; }
     private Status Status { get; set; }
 
+    public Room Room {get; set;} = new Room();
+    public Guest Guest {get; set;} = new Guest();
+
     public Status CurrentStatus { get { return this.Status; } }
 
     public void ChangeState(Actions action)

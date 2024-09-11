@@ -6,5 +6,6 @@ public class HotelDbContext(DbContextOptions<HotelDbContext> options) : DbContex
 {
     public virtual DbSet<Guest> Guests {get; set;}
 
+    public virtual DbSet<Room> Rooms {get; set;}
     public virtual DbSet<Booking> Bookings {get;set;}
 }

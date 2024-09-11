@@ -3,6 +3,7 @@ using System;
 using Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Data.Migrations
 {
     [DbContext(typeof(HotelDbContext))]
-    partial class HotelDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240911003022_AddingGuestValueObject")]
+    partial class AddingGuestValueObject
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -143,31 +146,6 @@ namespace Data.Migrations
                         });
 
                     b.Navigation("DocumentId")
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Domain.Room", b =>
-                {
-                    b.OwnsOne("Domain.ValueObjects.Price", "Price", b1 =>
-                        {
-                            b1.Property<long>("RoomId")
-                                .HasColumnType("bigint");
-
-                            b1.Property<int>("Currency")
-                                .HasColumnType("integer");
-
-                            b1.Property<decimal>("Value")
-                                .HasColumnType("numeric");
-
-                            b1.HasKey("RoomId");
-
-                            b1.ToTable("Rooms");
-
-                            b1.WithOwner()
-                                .HasForeignKey("RoomId");
-                        });
-
-                    b.Navigation("Price")
                         .IsRequired();
                 });
 #pragma warning restore 612, 618
